@@ -1,0 +1,53 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Phaser - Making your first game, part 1</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+		var game = {
+			options: {
+				width:800,
+				height:600
+			},
+			canvas: document.createElement("canvas"),
+			start: function () {
+				this.canvas.width = this.options.width;
+				this.canvas.height = $this.options.height;
+				this.context = this.canvas.getContext("2d");
+				document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+				this.frameNo = 0;
+			},
+			clear : function() {
+				this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+			}
+		};
+
+		var hero = {
+			MaxHp : 100,
+			Hp : 100,
+			stamina : 5,
+			mana: 10,
+			strength: 5,
+			intelligence: 5,
+			agility : 5
+		};
+
+
+		// loadgame
+		function startGame(){
+
+		}
+
+</script>
+
+</body>
+</html>
